@@ -1,0 +1,15 @@
+1. git --version
+
+2. git init
+
+3. git config --global user.name "name_here" and git config --global user.email "email_here"
+
+4. git add 'file_name' / git add .
+
+5. git restore --staged "file_name"
+
+6. git commit -m "commit message here"
+
+7. git push
+
+8. Clone download all files from our reposetry but pull will download or update those files who have some changes from other person.
