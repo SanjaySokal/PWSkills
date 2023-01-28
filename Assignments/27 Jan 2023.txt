@@ -1,0 +1,20 @@
+1. Dynamically-typed languages perform type checking at runtime, while Statically typed languages perform type checking at compile time.
+
+2. Variables is a memory location where we can store some value with assigning the name of that particular pcale where we are storing the value.
+
+3. In Java, firstly we have to define the datatype of the value and then name that the variable and assign a value to that variable.
+
+4. Primitive data types which includes byte , short , int , long , float , double , boolean and char.
+
+5. Identifiers are the name of the variable in which are we are storing data.
+
+6. Operators
+    a. Assignment Operator
+    b. Arithmetic Operators
+    c. Conditional Operators
+    d. Relational Operators
+
+7. If we have to increase one to a variable then it is called as increment.
+    example: int a = 5; a++; // new value of "a" will be 6.
+   If we have to decrease one to a variable then it is called as decrement.
+    example: int a = 5; a--; // new value of "a" will be 4.
