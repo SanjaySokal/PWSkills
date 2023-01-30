@@ -1,0 +1,25 @@
+1. Conditional operators are those operators which are used to execute some code on the bases of some conditions. It always return true or false.
+
+2. There are two types of operators based on the number of operands. 
+    a.) unary
+    b.) binary
+
+3. Switch code is used to execute some code based on many conditions. As it is very fast, if else is not used at that place where their are many conditions because it will take time to execute. If we have only 2-4 conditions then we can use else-if.
+
+4. Priority level of arithmetic operations in java are ==, <=, =>, *, %, /
+
+5. The statement which return us true or false of any code then it is called Conditional statement. It is used to handle true or false of any operation.
+
+6. if(condition) {
+    // code here...
+    } else {
+        // code here..
+    }
+
+7. while, do, for
+
+8. In for loop we can decalre variable, put condition and put increament or decreament in a single statement while decalring for loop but we can put condition only in while loop.
+
+9.  for (int i = 1; i <= 10; i++) {
+        System.out.print(i + " ");
+    }
