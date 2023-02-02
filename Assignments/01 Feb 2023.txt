@@ -1,4 +1,17 @@
-package JavaPractice.Arrays;
+1. An Array is the collection of element which contains only one type of data and having fixed number of values.
+
+2. datatype[] array = new datatype[length_of_array];
+
+3. No, we cannot change the size of array at runtime.
+
+4. No, we cannot declare array without assigning size of the array.
+
+5. Default value of array is 0
+
+6. The array with follow linear / one dimensional pattern is called 1-D array.
+    {1, 2, 3, 5, 7, 1, 2, 3}
+
+7. 
 
 public class Assignment {
     public static void main(String args[]) {
