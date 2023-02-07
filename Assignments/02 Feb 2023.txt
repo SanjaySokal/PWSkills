@@ -1,0 +1,27 @@
+1. The defalt value will be 0 (Zero).
+
+2. No, we can't use negative number as index but we can use as value of any index.
+
+3. Array stored in jvm memory in heap area.
+
+4. As Array has fixed size so we cannot add more number out of index we have provided and also we cannot delete any element, but we can change value of any index in Array.
+
+5. The Array which don't have any name like System.out.println(new int[]{1, 2, 3, 4, 5});
+
+6. We can traverse Array usuing for loop or for-each loop.
+
+7. length is an keyword but length() is an method. length is used to get length of an Array but length() is used to get length of an string including all spaces and all characters / special characters.
+
+for example:
+
+package JavaPractice.Arrays;
+
+public class ArrayLen {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(arr.length); // return the length 5 of Array
+
+        String name = "Sanjay Sokal";
+        System.out.println(name.length()); // return the length 12 of String
+    }
+}
