@@ -1,0 +1,95 @@
+1.
+    import java.util.Scanner;
+
+    public class UserInput {
+        public static void main(String[] args) {
+            System.out.print("Enter Your Name: ");
+
+            Scanner scanner = new Scanner(System.in);
+
+            String name = scanner.nextLine();
+
+            System.out.println(name);
+        }
+    }
+
+2. We can concatinate two Strings usuing + operator.
+
+    public class Concatinate {
+        public static void main(String[] args) {
+            String fName = "Sanjay ";
+            String lName = "Sokal";
+
+            String fullName = fName + lName;
+
+            System.out.println(fullName);
+        }
+    }
+
+3. We can find length of a String usuing length() method.
+
+    public class lengthOfString {
+        public static void main(String[] args) {
+            String name = "Sanjay Sokal";
+            System.out.println(name.length());
+        }
+    }
+
+4. We can compare two Strings using == operator and equals() method.
+
+    public class CompaireStrings {
+        public static void main(String[] args) {
+            String name1 = "Sanjay Sokal";
+            String name2 = "Sanjay Sokal";
+
+            System.out.println(name1 == name2);
+            System.out.println(name1.equals(name2));
+        }
+    }
+
+5.  public class lengthOfString {
+        public static void main(String[] args) {
+            String name = "refrigerator";
+            System.out.println(name.length());
+        }
+    }
+
+6.  public class ContainsString {
+        public static void main(String[] args) {
+            String text = "Umbrella";
+
+            Boolean check = false;
+
+            for (int i = 0; i < text.length(); i++) {
+                if(text.charAt(i) == 'e') {
+                    check = true;
+                }
+            }
+
+            System.out.println(check);
+        }
+    }
+
+7.
+    public class DeleteConstants {
+        public static void main(String[] args) {
+            String str = "Hello, have a good day";
+            str = str.replace("a", "");
+            str = str.replace("A", "");
+
+            str = str.replace("e", "");
+            str = str.replace("E", "");
+
+            str = str.replace("i", "");
+            str = str.replace("I", "");
+
+            str = str.replace("o", "");
+            str = str.replace("O", "");
+            
+            str = str.replace("u", "");
+            str = str.replace("U", "");
+
+            System.out.println(str);
+        }
+    }
+
