@@ -1,0 +1,11 @@
+1. String: String is an Object, a sequence of characters which is used to store name or alphabetic characters & symbols.
+
+2. String is of two types. Mutable and unmutable String.
+
+3. We can create Object of String in two types. for example: String name = "Sanjay Sokal"; String name = new String("Sanjay Sokal"); 
+
+4. It is a separate place in the heap memory where the values of all the strings in the program are stored.
+
+5. A mutable object can be changed after it is created and an immutable object cannot be changed.
+
+6. In the Heap memory string constant pool is located.
