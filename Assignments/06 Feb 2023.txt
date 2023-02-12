@@ -1,0 +1,39 @@
+1. The string which can be change without creating new object. StringBuffer and StringBuilder are the examples of mutable string.
+
+2.
+    public class ReverseAString {
+        public static void main(String[] args) {
+            String str = "PWSKILLS";
+
+            for (int i = 0; i < str.length(); i++) {
+                System.out.print(str.charAt(str.length() - 1 - i));
+            }
+        }
+    }
+
+3.
+    public class RevSantance {
+        public static void main(String[] args) {
+            String input = "Think Twice";
+
+            char[] characters = input.toCharArray();
+            String reversed = "";
+
+            for (int i = characters.length - 1; i >= 0; i--) {
+                reversed += characters[i];
+            }
+
+            System.out.println("The reversed string is: " + reversed);
+        }
+    }
+
+4.
+    public class SortAString {
+        public static void main(String[] args) {
+            String str = "Sanjay Sokal";
+            char[] arr = str.toCharArray();
+            Arrays.sort(arr);
+
+            System.out.println(arr);
+        }
+    }
