@@ -1,0 +1,199 @@
+1.
+import java.util.Arrays;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        String str = "Sanjay Sokal";
+        char[] arr = str.toCharArray();
+        Arrays.sort(arr);
+
+        String rem = "";
+        for (int i = 1; i < arr.length; i++) {
+            if (i == 1) {
+                rem = rem + arr[i - 1];
+            }
+            if (arr[i] != arr[i - 1]) {
+                rem = rem + arr[i];
+            }
+        }
+        System.out.println(rem);
+    }
+}
+
+
+2.
+    import java.util.Arrays;
+
+    public class PrintDulicates {
+        public static void main(String[] args) {
+            String str = "Sanjay Sokal";
+            char[] arr = str.toCharArray();
+            Arrays.sort(arr);
+
+            String rem = "";
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (i == 0) {
+                    rem = "" + arr[i];
+                }
+                if (arr[i] == arr[i + 1]) {
+                    rem = rem + arr[i + 1];
+                }
+            }
+            System.out.println(rem);
+        }
+    }
+
+3.
+
+    public class Palandrome {
+        public static void main(String[] args) {
+            String str = "2552";
+
+            String strRev = "";
+            for (int i = 0; i < str.length(); i++) {
+                strRev = strRev + str.charAt(str.length() - i - 1);
+            }
+
+            if(strRev == str) {
+                System.out.println("The String is Palandrome");
+            }
+        }
+    }
+
+4.
+    public class CountOfSpecial {
+        public static void main(String[] args) {
+            String str = "Sanjay Sokal is my Name! My phone Number is 8295673601";
+
+            int vowels = 0, constants = 0, specialChars = 0;
+
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch ==  'O' || ch == 'U') {
+                    vowels++;
+                }
+
+                else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+                    constants++;
+                }
+
+                else {
+                    specialChars++;
+                }
+            }
+
+            System.out.println("Number of vowels: " + vowels);
+            System.out.println("Number of constants: " + constants);
+            System.out.println("Number of special characters: " + specialChars);
+        }
+    }
+
+5.
+    import java.util.Arrays;
+
+    public class AnagramCheck {
+        public static void main(String[] args) {
+            String str1 = "listen";
+            String str2 = "silent";
+
+            char[] char1 = str1.toCharArray();
+            char[] char2 = str2.toCharArray();
+
+            Arrays.sort(char1);
+            Arrays.sort(char2);
+
+            boolean check = Arrays.equals(char1, char2);
+
+            if (check) {
+                System.out.println("The strings are anagrams.");
+            } else {
+                System.out.println("The strings are not anagrams.");
+            }
+        }
+    }
+
+6.
+
+    public class PanagramCheck {
+        public static void main(String[] args) {
+            String str = "The quick brown fox jumps over the lazy dog";
+            str = str.toLowerCase();
+
+            char[] a2z = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+                    't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+            boolean check = false;
+            for (int i = 0; i < a2z.length; i++) {
+                if (str.contains("" + a2z[i])) {
+                    // System.out.println("True");
+                    check = true;
+                } else {
+                    check = false;
+                    break;
+                }
+            }
+
+            System.out.println(check);
+        }
+    }
+
+7.
+
+    public class UniqueCharacterCheck {
+        public static void main(String[] args) {
+            String str = "abcdefghijklmnopqrstuvwxyz";
+            boolean[] charSeen = new boolean[26];
+
+            for (int i = 0; i < str.length(); i++) {
+                char ch = str.charAt(i);
+                int index = ch - 'a';
+                if (charSeen[index]) {
+                    break;
+                } else {
+                    charSeen[index] = true;
+                }
+            }
+
+            boolean isUnique = true;
+            for (boolean seen : charSeen) {
+                if (!seen) {
+                    isUnique = false;
+                    break;
+                }
+            }
+
+            if (isUnique) {
+                System.out.println("The string contains all unique characters.");
+            } else {
+                System.out.println("The string does not contain all unique characters.");
+            }
+        }
+    }
+
+8.
+    public class MaximumOccurringCharacter {
+        public static void main(String[] args) {
+            String str = "Sanjay Sokal";
+
+            System.out.println("The maximum occurring character in the string is: " + MaxChar(str));
+        }
+
+        public static char MaxChar(String str) {
+            int[] charCount = new int[256];
+            int max = 0;
+            char result = ' ';
+
+            for (int i = 0; i < str.length(); i++) {
+                charCount[str.charAt(i)]++;
+            }
+
+            for (int i = 0; i < charCount.length; i++) {
+                if (charCount[i] > max) {
+                    max = charCount[i];
+                    result = (char) i;
+                }
+            }
+
+            return result;
+        }
+    }
