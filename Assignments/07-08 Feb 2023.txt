@@ -1,0 +1,25 @@
+1. Static is a keyword which is used at that place where there is no need to create an object.
+
+    public class FirseProgramm {
+        public static void main(String[] args) {
+            displayHello();
+        }
+
+        public static void displayHello() {
+            System.out.println("Printing in displayHello() function");
+        }
+    }
+
+2. The Java ClassLoader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine
+
+3. No, we cannot make a local variable to static.
+
+4. The static block always execute first before main() method because the compiler stores them in memory at the time of class loading and before the object creation.
+
+5. Because a static method is a method that belongs to a class rather than an instance of a class.
+
+6. Because it executes the code during the class loading in memory.
+
+7. Instance variables are created when an object is created by the use of the new keyword but static variables are created during the class loading in memory.
+
+8. A static method is a class method and a non-static method is an instance method.
