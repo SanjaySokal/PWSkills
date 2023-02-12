@@ -1,0 +1,79 @@
+1. Encapsulation is the process in which we can protect our data. In other words we can say that we can set permissions to our data accessablity usuing encapsulation. It will protect or hide our data so thats why it is also called as Data Hiding.
+
+2. Important feature of encapsulation is this that we can integrate data (variables) and code (methods) into a single unit.
+
+3. Getter and setter is the feature of encapsulation in which we can get and set the value of our protected data.
+
+    class encap {
+        private String name;
+
+        // Getter
+        public String getName() {
+            return name;
+        }
+
+        // Setter
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+    public class GetterSetter {
+        public static void main(String[] args) {
+            encap encap = new encap();
+
+            encap.setName("Sanjay Sokal");
+            System.out.println(encap.getName());
+        }
+    }
+
+4. this keyword refers to variables or data of same class.
+
+    class encap {
+        private String name;
+
+        // Getter
+        public String getName() {
+            return name;
+        }
+
+        // Setter
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+    public class GetterSetter {
+        public static void main(String[] args) {
+            encap encap = new encap();
+
+            encap.setName("Sanjay Sokal");
+            System.out.println(encap.getName());
+        }
+    }
+
+5. We can hide our data and the class will maintain its data members and methods as read-only.
+
+6.
+    class encap {
+        private String name;
+
+        // Getter
+        public String getName() {
+            return name;
+        }
+
+        // Setter
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+    public class GetterSetter {
+        public static void main(String[] args) {
+            encap encap = new encap();
+
+            encap.setName("Sanjay Sokal");
+            System.out.println(encap.getName());
+        }
+    }
