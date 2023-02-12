@@ -1,0 +1,25 @@
+1. A constructor in Java is a special method that is used to initialize objects.
+
+2. Constructor chaining is the process of calling a sequence of constructors.
+
+3. Yes we can call subclass constructor from a superclass constructor.
+
+4. It will give us an error because an constructor cannot return any value.
+
+5. The constructor which don't recieve any arguments or any parameter while creating object of that particular class.
+
+6. No-args constructor is also called as a default constructor so their is no difference between them.
+
+7. We need constructor overloading when we have to pass different parameters to the constructor.
+
+8. Defult constructor is the constructor which will be created automatically by the compiler or we create it when we create the object of the class which don't recieve any arguments.
+
+    public class Testing {
+        Testing() {
+            System.out.println("This is an default constructor");
+        }
+
+        public static void main(String[] args) {
+            Testing testing = new Testing();
+        }
+    }
