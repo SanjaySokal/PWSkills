@@ -9,8 +9,8 @@
     d. Secure Programming language
     e. Open Source
 
-4. Object is an instance of a class.
+4. An object is an instance of a class. An object is a real-world entity that has data and methods. We can create an object by using the new keyword, followed by the class name
 
-5. Class is the template used to create objects and to define object data types and methods
+5. A class is a blueprint from which an object can be created. We can declare a class by using the class keyword. Class members and functions are declared in the class.
 
 6. Main method is the entry point of Java code from where our Java code starts execution.
