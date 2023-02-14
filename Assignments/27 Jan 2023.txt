@@ -6,7 +6,7 @@
 
 4. Primitive data types which includes byte , short , int , long , float , double , boolean and char.
 
-5. Identifiers are the name of the variable in which are we are storing data.
+5. Identifiers are the name of the variable in which are we are storing data, in other words an identifier is a name used to identify a variable, method, class, package, or any other user-defined item.
 
 6. Operators
     a. Assignment Operator
