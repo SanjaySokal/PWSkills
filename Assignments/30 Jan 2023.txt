@@ -1,11 +1,11 @@
-1. ClassName objectName = new ClassName();
+1. We can create an object of a class by using the new keyword. eg: ClassName objectName = new ClassName();
 
-2. new keyword is used to create an object.
+2. new keyword is used to create instances of classes. The new keyword creates a new object. We can then store the reference in a variable, pass it as an argument to a method and can use it in any other way we need.
 
-3. There are three types of variables in Java. Local variable, Instance variable, and Static variable.
+3. there are two main types of variables: instance variables and static variables.
 
-4. Local variables are those variables which can be declared in method and don't have a default value. Instance Variable are those variables which can be declared in class bul outside the method and they have default values.
+4. Local variables are those variables which can be declared in method and don't have a default value. Instance Variable are those variables which can be declared in class but outside the method and they have default values.
 
-5. Stack and Heap
+5. Memory for instance variables is allocated in the heap, while memory for local variables is allocated on the stack.
 
 6. The method which have same name but different parameters is called method overloading.
