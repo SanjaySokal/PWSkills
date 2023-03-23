@@ -1,0 +1,39 @@
+1. Multithreading: It is the programming concept in which we can process multiple tasks parallely. It save our computer power and runmultiple tasks parallely.
+
+2.
+    a. Minimized system resource usage
+    b. Program structure simplification
+    c. Better communication
+
+3. A thread in Java is the direction or path in which a program is being executed.
+
+4.  
+    a. By extending Thread class.
+    b. By implementing Runnable interface.
+
+5. Process is the program under action whereas a thread is the smallest segment of instructions that can be handled independently by a scheduler.
+
+6.
+public class TestDaemonThread1 extends Thread {
+    public void run() {
+        if (Thread.currentThread().isDaemon()) {
+            System.out.println("daemon thread work");
+        } else {
+            System.out.println("user thread work");
+        }
+    }
+
+    public static void main(String[] args) {
+        TestDaemonThread1 t1 = new TestDaemonThread1();
+        TestDaemonThread1 t2 = new TestDaemonThread1();
+        TestDaemonThread1 t3 = new TestDaemonThread1();
+
+        t1.setDaemon(true);
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+7. Wait and Sleep are the methods used to pause a process for few seconds and go the thread in the waiting state, respectively.
