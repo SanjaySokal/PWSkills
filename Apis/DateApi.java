@@ -7,6 +7,7 @@ public class DateApi {
         Date date = new Date();
         System.out.println(date);
         long time = date.getTime();
+        System.out.println(time);
 
         java.sql.Date date1 = new java.sql.Date(time);
         System.out.println(date1);
