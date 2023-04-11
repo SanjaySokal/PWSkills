@@ -1,0 +1,20 @@
+1. The Java collections framework is a set of classes and interfaces that implement collection data structures.
+
+2.
+    a. ArrayList uses a dynamic array to store the elements, while LinkedList uses a doubly linked list.
+
+    b. ArrayList provides fast random access to any element by index, while LinkedList requires traversal from the head or tail node.
+
+    c. LinkedList take less time to insert and delete data then ArrayList.
+
+    d. ArrayList has a default initial capacity of 10 elements, while LinkedList has no such concept.
+
+3. In Iterator we can access all element in a sequence from index zero to end, but in ListIterator we can access data from last to zeroth index.
+
+4. Iterator can read and remove elements from a collection while traversing it. On the other hand, an Enumeration can only read elements from a collection while traversing it.
+
+5. We can edit delete data in a list but we can add and access the data in Set. Also if we want to store sorted and non reapeting elements we can use Set, but in List we can do that by writing some code.
+
+6. TreeSet give us an sorted array but HashSet don't give us such type of array.
+
+7. Array is fix in size and we cannot store homogenious type of data in Array but in ArrayList we can do both the things.
