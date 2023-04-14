@@ -1,0 +1,19 @@
+1. Map in Java is a collection of key-value pairs that provides fast execute particular task.
+
+2. The commonly used implementations of Map in Java are HashMap, TreeMap, LinkedHashMap, and ConcurrentHashMap.
+
+3. HashMap is an unordered collection that uses hashing to store the key-value pairs, while TreeMap is a sorted collection that stores the key-value pairs in a sorted order based on the natural order of the keys or a custom Comparator.
+
+4. we can check if a key exists in a Map in Java using the containsKey() method or the get() method. The containsKey() method returns a boolean value indicating whether the Map contains the specified key, while the get() method returns the value associated with the specified key, or null if the key is not present in the Map.
+
+5. It is the special feature in collection so that we can store homogenious type of data.
+
+6. In it we can store homogenious type of data so it is type safe and also it improve the execution of our code.
+
+7. A generic class in Java is a class that can work with different data types, allowing for code reuse and type safety.
+
+8. A type parameter in Java generics is a placeholder for a specific type used in generic classes or methods. eg. <T>
+
+9. A generic method in Java is a method that can operate on different types and is declared using type parameters.
+
+10. There is no difference between ArrayList and ArrayList<T>. Both represent the same generic class and can be used interchangeably.
