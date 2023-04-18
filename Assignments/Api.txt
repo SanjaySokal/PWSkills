@@ -1,1 +1,97 @@
-1. 
+1.
+    package Apis;
+
+    import java.time.LocalDate;
+    import java.time.LocalTime;
+
+    public class Assignment {
+        public static void main(String[] args) {
+            LocalDate lDate = LocalDate.now();
+            LocalTime lTime = LocalTime.now();
+            System.out.println(lDate + " - " + lTime);
+        }
+    }
+
+2.
+    package Apis;
+
+    import java.time.LocalDate;
+    import java.time.format.DateTimeFormatter;
+
+    public class Assignment {
+        public static void main(String[] args) {
+            LocalDate lDate = LocalDate.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+            String date = lDate.format(formatter);
+            System.out.println(date);
+        }
+    }
+
+3. We can perform many tasks at Collections but at the case of Stream we can perform any task only once a time after that it will be consumed by the task.
+
+In case of Collections:-
+
+    package Apis;
+
+    import java.util.ArrayList;
+
+    public class StreamApi {
+        public static void main(String[] args) {
+            ArrayList<Integer> list = new ArrayList<>();
+
+            list.add(3543);
+            list.add(2545);
+            list.add(7512);
+
+            System.out.println(list);
+        }
+    }
+
+In case of Stream:-
+    package Apis;
+
+    import java.util.ArrayList;
+    import java.util.stream.Stream;
+
+    public class StreamApi {
+        public static void main(String[] args) {
+            ArrayList<Integer> list = new ArrayList<>();
+
+            list.add(3543);
+            list.add(2545);
+            list.add(7512);
+            
+            Stream<Integer> s1 = list.stream();
+
+            System.out.println(s1.count());
+        }
+    }
+
+4. Enums is a type of comment which cannot be ignored by the developer and compiler. It shows the behaviour of our code.
+
+    package Collections.Enums;
+
+    enum Week {
+        MON, TUE, WED, THU, FRI, SAT, SUN;
+    }
+
+    public class Enums {
+        // enum Result {
+        //     PASS, FAIL, NORESULT;
+        // }
+
+        public static void main(String[] args) {
+            enum Result {
+                PASS, FAIL, NORESULT;
+            }
+
+            Week mon = Week.MON;
+            System.out.println(mon);
+
+            Result res = Result.PASS;
+            System.out.println(res);
+        }
+    }
+
+
+5. @Override, @Target, @FunctionalInterface, @Retention
