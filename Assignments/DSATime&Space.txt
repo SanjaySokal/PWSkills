@@ -149,3 +149,240 @@ Solution:
 
 
 ===================================================================================
+
+
+
+
+Q1: Take m and n input from the user and m * n integer inputs from user and print the following:
+number of positive numbers
+number of negative numbers
+number of odd numbers
+number of even numbers
+number of 0.
+Input 1:
+
+Output :
+number of positive numbers = 7
+number of negative numbers = 6
+number of odd numbers = 7
+number of even numbers = 9
+number of 0 = 3
+
+
+Solution:
+
+    package DSA.DArray;
+
+    import java.util.Scanner;
+
+    public class FindNumbersBy {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            int[][] arr = new int[4][4];
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+
+            sc.close();
+
+            int positiveNum = 0, negativeNum = 0, oddNum = 0, evenNum = 0, zero = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (arr[i][j] > 0) {
+                        positiveNum++;
+                    }
+
+                    if (arr[i][j] < 0) {
+                        negativeNum++;
+                    }
+
+                    if (arr[i][j] % 2 != 0) {
+                        oddNum++;
+                    }
+
+                    if (arr[i][j] % 2 == 0) {
+                        evenNum++;
+                    }
+
+                    if (arr[i][j] == 0) {
+                        zero++;
+                    }
+                }
+            }
+
+            System.out.println("number of positive numbers " + positiveNum);
+            System.out.println("number of negative numbers " + negativeNum);
+            System.out.println("number of odd numbers " + oddNum);
+            System.out.println("number of even numbers " + evenNum);
+            System.out.println("number of zero numbers " + zero);
+        }
+    }
+
+
+
+Q2: write a program to print the elements above the secondary diagonal in a user inputted
+square matrix.
+Input 1:
+
+Output : 1 2 4
+
+Solution:
+
+    package DSA.DArray;
+
+    import java.util.Scanner;
+
+    public class DiagonalPrint {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            int[][] arr = new int[4][4];
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+
+            sc.close();
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    System.out.print(arr[i][j] + " ");
+                }
+                System.out.println();
+            }
+
+            System.out.println("======================================");
+
+            System.out.print("Primary Diagonal: ");
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i; j < arr.length; j++) {
+                    System.out.print(arr[i][j] + " ");
+                    break;
+                }
+            }
+            System.out.println();
+
+            System.out.println("======================================");
+
+            System.out.print("Secondary Diagonal: ");
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i; j < arr.length; j++) {
+                    System.out.print(arr[i][arr.length - j - 1] + " ");
+                    break;
+                }
+            }
+        }
+    }
+
+
+Q3: write a program to print the elements of both the diagonals in a user inputted square matrix
+in any order.
+Input 1:
+
+Output 1: 1 3 5 7 9
+
+Solution:
+
+    package DSA.DArray;
+
+    import java.util.Scanner;
+
+    public class PrintDiagonalSqure {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            int[][] arr = new int[4][4];
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+
+            sc.close();
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    System.out.print(arr[i][j] + " ");
+                }
+                System.out.println();
+            }
+
+            System.out.println("======================================");
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i; j < arr.length; j++) {
+                    System.out.print(arr[i][j] + " ");
+                    break;
+                }
+
+                for (int j = i; j < arr.length; j++) {
+                    System.out.print(arr[i][arr.length - j - 1] + " ");
+                    break;
+                }
+            }
+        }
+    }
+
+
+Q4: Write a program to find the largest element of a given 2D array of integers.
+Input 1:
+Output : 9
+
+Solution:
+
+    package DSA.DArray;
+
+    import java.util.Scanner;
+
+    public class LargestElement {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            int[][] arr = new int[4][4];
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+
+            sc.close();
+
+            System.out.println("================");
+
+            int largest = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (i == 0) {
+                        largest = arr[i][j];
+                    } else if (arr[i][j] > largest) {
+                        largest = arr[i][j];
+                    }
+                }
+            }
+
+            System.out.println("largest number is: " + largest);
+        }
+    }
+
+Q5: Write a function which accepts a 2D array of integers and its size as arguments and
+displays the elements of middle row and the elements of middle column. Printing can
+be done in any order.
+[Assuming the 2D Array to be a square matrix with odd dimensions i.e. 3x3, 5x5, 7x7 etc...]
+
+Input 1:
+
+Output : 3 5 5 6 37 7 6 4 3
+
+
