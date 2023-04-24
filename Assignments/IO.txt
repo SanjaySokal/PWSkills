@@ -1,0 +1,19 @@
+1. In Java, input and output streams are used to read data from and write data to files or other sources/destinations. Input streams receive data, while output streams send data.
+
+2. In Java, output streams have various methods to write data to their destinations, including the "write()" method to write bytes, the "flush()" method to clear the buffer, and the "close()" method to close the stream.
+
+3. Serialization in Java is the process of converting an object into a stream of bytes to be saved or transmitted.
+
+4. The Serializable interface in Java is used to mark a class as serializable, allowing it to be converted into a stream of bytes during serialization.
+
+5. Deserialization in Java is the process of converting a stream of bytes back into an object, after it has been serialized.
+
+6. Serialization in Java is achieved by implementing the Serializable interface and using an ObjectOutputStream to write the object to a file or stream.
+
+7. Deserialization in Java is achieved by using an ObjectInputStream to read the stream of bytes and reconstruct the object.
+
+8. In Java, you can avoid certain member variables of a class from getting serialized by marking them with the "transient" keyword. These variables will not be included in the serialization process.
+
+9. FileInputStream, FileOutputStream, FileReader, FileWriter, BufferedInputStream, BufferedOutputStream, BufferedReader, BufferedWriter, and more are available in the Java Io File Classes API.
+
+10. The Serializable interface is easier to implement but less flexible, while the Externalizable interface offers more control but requires more work.
