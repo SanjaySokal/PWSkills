@@ -1,6 +1,6 @@
 1. Programming languages are formal languages used to create software and control the behavior of machines, such as computers. Examples include C++, Java, Python, and JavaScript.
 
-2. Programming language is a way to give communicate instructions to a computer.
+2. Programming language is a way to give communicate instructions to a computer. A programming language is a system of notation for writing computer programs.
 
 3. Features of Java
     a. Plateform Independent
@@ -13,4 +13,4 @@
 
 5. A class is a blueprint from which an object can be created. We can declare a class by using the class keyword. Class members and functions are declared in the class.
 
-6. Main method is the entry point of Java code from where our Java code starts execution.
+6. Main method is the entry point of Java code from where our Java code starts execution. It is called a the main part of our code from where our code starts execution.
